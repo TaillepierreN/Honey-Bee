@@ -16,6 +16,6 @@ public class SocketWithTag : XRSocketInteractor
     }
     private bool MatchUsingTag(IXRInteractable interactable)
     {
-        return interactable.transform.CompareTag("targetTag");
+        return interactable.transform.CompareTag(targetTag);
     }
 }
