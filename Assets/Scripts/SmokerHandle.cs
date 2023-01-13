@@ -8,23 +8,25 @@ public class SmokerHandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void PressHandle()
     {
-        if(!isPressed);
-        transform.Rotate(new Vector3(-15,0,0));
-        isPressed = true;
+        if (!isPressed)
+        {
+            transform.Rotate(new Vector3(-15, 0, 0));
+            isPressed = true;
+        }
     }
     public void ReleaseHandle()
     {
-        transform.Rotate(new Vector3(15,0,0));
+        transform.Rotate(new Vector3(15, 0, 0));
         isPressed = false;
     }
 }
